@@ -1,0 +1,211 @@
+.col-sm {
+  padding: 0px;
+}
+.col-sm-auto {
+  padding-left: 0;
+}
+.menu-nav {
+  border-bottom: 1px solid black;
+  padding: 10px;
+  position: fixed:
+}
+.logo-word {
+  padding-top: 5px;
+  padding-left: 20px;
+}
+h1 {
+  font-family: "LustPro-No1";
+  font-size: 5em;
+  line-height: 1em;
+}
+h2 {
+  padding-left: 0px;
+  padding-top: 5px;
+  margin-bottom: 0px;
+  font-family: "LustPro-No1";
+  font-size: 3.5em;
+}
+h3 {
+  padding-left: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  font-family: "LustPro-No1";
+  font-size: 1.6em;
+}
+p {
+  font-family: "EB Garamond", serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.search-form {
+  padding-top: 5px;
+}
+.search-engine {
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 5px 10px;
+  width: 250px;
+  font-family: "EB Garamond", serif;
+}
+.search-btn {
+  border-radius: 50px;
+  background: black;
+  color: white;
+  padding: 5px 15px;
+  font-family: "EB Garamond", serif;
+}
+
+.search-btn:hover {
+  background: white;
+  border: 1px solid black;
+  color: black;
+  transition: all 200 ease-in-out;
+}
+
+.content-2-colum-1 {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background-color: #fff3d6;
+  height: 500px;
+}
+.content-2-colum-2 {
+  border-bottom: 1px solid black;
+  height: 500px;
+  padding: 0px;
+}
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.cities {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+.country {
+  font-family: "LustPro-No3it";
+}
+.weather-image {
+  width: 180px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+.info {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.temperature {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+#celsius {
+  font-family: "EB Garamond", serif;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  bottom: 25px;
+}
+#fahrenheit {
+  font-family: "EB Garamond", serif;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  bottom: 25px;
+}
+
+#celsius:hover, #fahrenheit:hover {
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.img-fluid {
+  /*Poner efectos imagen */
+  width: auto;
+  height: auto;
+}
+.last-search {
+  padding: 12px 0px 12px;
+}
+.last-cities-searched {
+  padding: 3px 25px 0px;
+}
+.citie-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-family: "EB Garamond", serif;
+  color: white;
+  background: black;
+}
+.citie-btn:hover {
+  background: white;
+  border: 1px solid black;
+  color: black;
+  transition: all 200 ease-in-out;
+}
+.last-search {
+  border-bottom: 1px solid black;
+}
+.week-days {
+  border-bottom: 1px solid black;
+}
+.img-wheather-week-days {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+.week-days-forecast {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.temperature-weekdays {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.content-4 {
+  border-right: 1px solid black;
+  height: 200px;
+  padding-top: 18px;
+}
+
+.colum4-1 {
+  background-color: #ffe39a;
+}
+.colum4-2 {
+  background-color: #e7c87a;
+}
+.colum4-3 {
+  background-color: #d6ac45;
+}
+.colum4-4 {
+  background-color: #bc8e1b;
+}
+.colum4-5 {
+  background-color: #a57808;
+}
+.footer-info {
+  height: 30px;
+  padding-top: 35px;
+}
+.social-media {
+  text-align: right;
+  padding-top: 10px;
+}
+a:hover {
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}

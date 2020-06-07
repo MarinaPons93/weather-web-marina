@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <!--BOOTSTRAP-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--WEBFONTS-->
+    <link
+      rel="stylesheet"
+      type="application/font-woff"
+      href="LustPro/3883E1_1_0.ttf"
+    />
+    <link
+      rel="stylesheet"
+      type="application/font-woff"
+      href="LustPro/3883E1_0_0.ttf"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="style-forecast.css" />
+    <!--JAVASCRIPT LINK-->
+    <link href="data-forecast.js" />
+    <!-- AXIOS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!--HEADER-->
+      <div class="row justify-content-md-center menu-nav">
+        <div class="col-sm logo-word">
+          <h3>Weather Forecast</h3>
+        </div>
+        <div class="col-sm"></div>
+        <div class="col-sm-auto search-form">
+          <form id="user-search">
+            <input
+              class="search-engine"
+              type="search"
+              placeholder="Type here"
+              id="city-input"
+            />
+            <input class="search-btn" type="submit" label="search" />
+          </form>
+        </div>
+      </div>
+      <!--CONTENT 2-->
+      <div class="row">
+        <div class="col-md-6 content-2-colum-1">
+          <div class="row cities">
+            <h1 id="city-name">
+              <h1 id="country-element" class="country"></h1>
+            </h1>
+          </div>
+          <div class="row">
+            <img class="weather-image" src="images/Sun.png" alt="sun" />
+          </div>
+          <div class="row">
+            <p class="info" id="date"></p>
+          </div>
+          <div class="row temperature">
+            <h2>
+              <span id="current-temp">23</span><span id="celsius"> ºC </span
+              ><span id="fahrenheit">ºF</span>
+            </h2>
+          </div>
+        </div>
+        <div class="col-md-6 content-2-colum-2">
+          <img
+            class="img-responsive fit-image"
+            src="cities/casa-vicens.jpg"
+            alt="Barcelona"
+          />
+        </div>
+      </div>
+      <!--CONTENT 3-->
+      <div class="row last-search">
+        <div class="col-sm-3 last-cities-searched">
+          <h3 class="">Last searched cities:</h3>
+        </div>
+        <div class="col-sm-auto">
+          <button class="citie-btn">Lisboa</button>
+        </div>
+        <div class="col-sm-auto">
+          <button class="citie-btn">Madrid</button>
+        </div>
+        <div class="col-sm-auto">
+          <button class="citie-btn">Ciutadella</button>
+        </div>
+        <div class="col-sm-auto">
+          <button class="citie-btn">Kyoto</button>
+        </div>
+        <div class="col-sm-auto">
+          <button class="citie-btn">Copenhaguen</button>
+        </div>
+        <div class="col-sm-auto">
+          <button class="citie-btn">New York</button>
+        </div>
+        <div class="col-sm-auto">
+          <button class="citie-btn">Brighton</button>
+        </div>
+        <div class="col-sm-auto">
+          <button class="citie-btn">Santodomingo</button>
+        </div>
+        <div class="col-sm-auto">
+          <button class="citie-btn">Moscow</button>
+        </div>
+      </div>
+      <!--CONTENT 4 WEEK DAYS-->
+      <div class="row week-days">
+        <div class="col-sm content-4 colum4-1">
+          <div class="row week-days-forecast">
+            <p class="">Tuesday</p>
+          </div>
+          <div class="row">
+            <img
+              class="img-wheather-week-days"
+              src="images/Sun.png"
+              alt="sun"
+            />
+          </div>
+          <div class="row temperature-weekdays">
+            <h3>23ºC</h3>
+          </div>
+        </div>
+        <div class="col-sm content-4 colum4-2">
+          <div class="row week-days-forecast">
+            <p class="">Wednesday</p>
+          </div>
+          <div class="row">
+            <img
+              class="img-wheather-week-days"
+              src="images/Sun.png"
+              alt="sun"
+            />
+          </div>
+          <div class="row temperature-weekdays">
+            <h3>23ºC</h3>
+          </div>
+        </div>
+        <div class="col-sm content-4 colum4-3">
+          <div class="row week-days-forecast">
+            <p class="">Thursday</p>
+          </div>
+          <div class="row">
+            <img
+              class="img-wheather-week-days"
+              src="images/Sun.png"
+              alt="sun"
+            />
+          </div>
+          <div class="row temperature-weekdays">
+            <h3>23ºC</h3>
+          </div>
+        </div>
+        <div class="col-sm content-4 colum4-4">
+          <div class="row week-days-forecast">
+            <p class="">Friday</p>
+          </div>
+          <div class="row">
+            <img
+              class="img-wheather-week-days"
+              src="images/Sun.png"
+              alt="sun"
+            />
+          </div>
+          <div class="row temperature-weekdays">
+            <h3>23ºC</h3>
+          </div>
+        </div>
+        <div class="col-sm content-4 colum4-5">
+          <div class="row week-days-forecast">
+            <p class="">Saturday</p>
+          </div>
+          <div class="row">
+            <img
+              class="img-wheather-week-days"
+              src="images/Sun.png"
+              alt="sun"
+            />
+          </div>
+          <div class="row temperature-weekdays">
+            <h3>23ºC</h3>
+          </div>
+        </div>
+      </div>
+      <!--FOOTER-->
+      <div class="row">
+        <div class="col-md-6 footer-info">
+          <p>Coded by Marina Pons</p>
+        </div>
+        <div class="col-md-6">
+          <p class="social-media">
+            <a
+              class="sm-instagram"
+              href="https://www.instagram.com/pons.marina/"
+              >Instagram</a
+            >
+            <br />
+            <a
+              class="sm-linkedin"
+              href="https://www.linkedin.com/in/marina-pons-03111b9b/"
+              >Linkedin</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
