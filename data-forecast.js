@@ -1,5 +1,4 @@
 //AXIOS
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>;
 const axios = require("axios");
 
 //CURRENT DATE PHRASE
