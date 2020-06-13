@@ -1,5 +1,5 @@
 //AXIOS
-const axios = require("axios");
+const axios = require("axios").default;
 
 //CURRENT DATE PHRASE
 function currentDate(date) {
