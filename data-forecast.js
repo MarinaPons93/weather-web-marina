@@ -1,4 +1,5 @@
 //AXIOS
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>;
 const axios = require("axios");
 
 //CURRENT DATE PHRASE
@@ -11,7 +12,7 @@ function currentDate(date) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
+    "Saturday",
   ];
   let day = days[now.getDay()];
   //DATE(NUMBER)
@@ -29,7 +30,7 @@ function currentDate(date) {
     "September",
     "October",
     "November",
-    "December"
+    "December",
   ];
   let month = months[now.getMonth()];
   //YEAR
