@@ -1,6 +1,3 @@
-//AXIOS
-const axios = require("axios");
-
 //CURRENT DATE PHRASE
 function currentDate(date) {
   //WEEKDAY
