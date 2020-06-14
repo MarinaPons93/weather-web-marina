@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Lust-Pro-light";
+  src: url("./LustPro/3883E1_0_0.eot"), 
+      url("./LustPro/3883E1_0_0.ttf") format('truetype'),
+      url("./LustPro/3883E1_0_0.woff") format('woff'),
+      url("./LustPro/3883E1_0_0.woff2") format('woff2');
+}
+@font-face {
+  font-family: "Lust-Pro-cursive";
+  src: url("./LustPro/3883E1_1_0.eot"), 
+      url("./LustPro/3883E1_1_0.ttf") format('truetype'),
+      url("./LustPro/3883E1_1_0.woff") format('woff'),
+      url("./LustPro/3883E1_1_0.woff2") format('woff2');
+}
+
+
 .col-sm {
   padding: 0px;
 }
@@ -14,7 +30,7 @@
   padding-left: 20px;
 }
 h1 {
-  font-family: "LustPro-No1";
+  font-family: "Lust-Pro-light" ;
   font-size: 5em;
   line-height: 1em;
 }
@@ -22,14 +38,14 @@ h2 {
   padding-left: 0px;
   padding-top: 5px;
   margin-bottom: 0px;
-  font-family: "LustPro-No1";
+  font-family: "Lust-Pro-light";
   font-size: 3.5em;
 }
 h3 {
   padding-left: 0px;
   padding-top: 0px;
   margin-bottom: 0px;
-  font-family: "LustPro-No1";
+  font-family: "Lust-Pro-light";
   font-size: 1.6em;
 }
 p {
@@ -88,7 +104,7 @@ a {
   padding-top: 20px;
 }
 .country {
-  font-family: "LustPro-No3it";
+  font-family: Lust-Pro-cursive;
 }
 .weather-image {
   width: 180px;
