@@ -30,8 +30,6 @@
     <link rel="stylesheet" href="style-forecast.css" />
     <!-- AXIOS -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <!--JAVASCRIPT LINK-->
-    <script src="data-forecast.js"></script>
   </head>
   <body>
     <div class="container-fluid">
@@ -42,14 +40,19 @@
         </div>
         <div class="col-sm"></div>
         <div class="col-sm-auto search-form">
-          <form id="user-search">
+          <form>
             <input
               class="search-engine"
               type="search"
               placeholder="Type here"
               id="city-input"
             />
-            <input class="search-btn" type="submit" label="search" />
+            <input
+              class="search-btn"
+              type="submit"
+              label="search"
+              id="usersearch"
+            />
           </form>
         </div>
       </div>
@@ -215,5 +218,7 @@
         </div>
       </div>
     </div>
+    <!--JAVASCRIPT LINK-->
+    <script src="data-forecast.js"></script>
   </body>
 </html>

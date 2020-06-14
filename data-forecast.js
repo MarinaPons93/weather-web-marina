@@ -10,9 +10,9 @@ function currentDate(date) {
     "Friday",
     "Saturday",
   ];
-  let day = days[now.getDay()];
+  let day = days[date.getDay()];
   //DATE(NUMBER)
-  let dayNumber = now.getDate();
+  let dayNumber = date.getDate();
   //MONTH
   let months = [
     "January",
@@ -28,15 +28,15 @@ function currentDate(date) {
     "November",
     "December",
   ];
-  let month = months[now.getMonth()];
+  let month = months[date.getMonth()];
   //YEAR
-  let year = now.getFullYear();
+  let year = date.getFullYear();
   //HOUR TIME
-  let hour = now.getHours();
+  let hour = date.getHours();
   if (hour < 10) {
     hour = `0${hour}`;
   }
-  let minutes = now.getMinutes();
+  let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
@@ -47,7 +47,7 @@ let now = new Date();
 console.log(now);
 
 let dateElement = document.querySelector("#date");
-dateElement.innerHTML = currentDate(); //Porque no acepta el now?
+dateElement.innerHTML = currentDate(now); //Why it isn't running?
 
 //CITY GEOLOCALIZATION
 function showCity(response) {
@@ -57,6 +57,7 @@ function showCity(response) {
   document.querySelector("#current-temp").innerHTML = Math.round(
     response.data.main.temp
   );
+  //document.querySelector("#date").innerHTML = "Hello";
 }
 
 function currentPosition(position) {
@@ -80,7 +81,7 @@ function citySearch(event) {
     .get(`${apiUrl}${cityInput.value}&units=metric&appid=${apiKey}`)
     .then(showCity);
 }
-let searchButton = document.querySelector("#user-search");
+let searchButton = document.querySelector("#usersearch");
 searchButton.addEventListener("submit", citySearch);
 
 //TEMPERATURE
