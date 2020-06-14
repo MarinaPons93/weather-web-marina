@@ -47,7 +47,7 @@ let now = new Date();
 console.log(now);
 
 let dateElement = document.querySelector("#date");
-dateElement.innerHTML = currentDate(now); //Why it isn't running?
+dateElement.innerHTML = currentDate(now);
 
 //CITY GEOLOCALIZATION
 function showCity(response) {
@@ -57,7 +57,6 @@ function showCity(response) {
   document.querySelector("#current-temp").innerHTML = Math.round(
     response.data.main.temp
   );
-  //document.querySelector("#date").innerHTML = "Hello";
 }
 
 function currentPosition(position) {
